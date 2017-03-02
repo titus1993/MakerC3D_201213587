@@ -28,6 +28,7 @@ nonterminal NodoC3D inicial, expresion;
 
 precedence left AND, OR, NOT;
 precedence left IGUAL, MAYOR, MENOR, MAYORIGUAL, MENORIGUAL, DIFERENTE;
+
 precedence left MAS, MENOS;
 precedence left MULT, DIV; 
 precedence right POT; 
