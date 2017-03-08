@@ -5,6 +5,7 @@ import java.io.StringReader;
 import org.compi2.codigo3d.parser.ControlC3D;
 import org.compi2.codigo3d.parser.parser;
 import org.compi2.codigo3d.parser.scanner;
+import org.compi2.codigo3d.parser.Etiqueta;
 
 /**
  *
@@ -77,6 +78,7 @@ public class Inicio extends javax.swing.JFrame {
             return;
         }
         try {
+            Etiqueta.setear();
             jTextArea_Codigo3Dgenerado.setText("");
             System.out.println("Inicia la generación de C3D...");
             scanner scan = new scanner(new BufferedReader( new StringReader(texto)));

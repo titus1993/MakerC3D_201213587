@@ -7,14 +7,22 @@ package org.compi2.codigo3d.parser;
  * @author esvux
  */
 public class NodoC3D {
-    private String cad;
+    private String cad, temp;
+    public String etqv = "";
+    public String etqf = "";
 
-    public NodoC3D(String cad) {
+    public NodoC3D(String temp, String cad, String v, String f) {
         this.cad = cad;
+        this.etqv = v;
+        this.etqf = f;
+        this.temp = temp;
     }
     
     public String getCad(){
         return cad;
     }
         
+    public String getTemp(){
+        return temp;
+    }
 }
